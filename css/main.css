@@ -1,0 +1,508 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+      url('../fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.container{
+  width: 1100px;
+  margin: 0 auto;
+  
+}
+.site-header{
+  background-color: #fff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+
+}
+.youtube-video{
+  width: 458px;
+height: 258px;
+left: calc(50% - 458px/2);
+top: calc(50% - 258px/2);
+}
+.navbar{
+  margin-right: 100px;
+}
+
+.nav-list{
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  list-style: none;
+
+margin: 0;
+  padding: 24px;
+}  
+
+.pixer-logo{
+  margin-right: auto;
+ margin-left: 130px;
+}
+.pixer-logo:hover{
+color: #191919;
+opacity: 0.6;
+}
+.pixer-logo:active{
+  color: #191919;
+opacity: 0.8;
+}
+.nav-item{
+  margin-right: 32px;
+  position: relative;
+}
+/* .line{
+  width: 80px;
+  height: 3px;
+  display: block;
+  background-color: #000;
+position: absolute;
+margin-top: 15px;
+ }  */
+
+.nav-link:last-child{
+  margin-right: 0;
+}
+.nav-link{
+  text-decoration: none;
+  color:#000000;
+  font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 24px;
+
+padding: 8px 10px;
+}
+.nav-link:active{
+background-color: #191919
+;
+color: #fff;
+
+}
+
+.nav-phone-link:hover{
+  border: 3px solid #00BAFC;
+  background-color: #fff;
+  color: #00BAFC;
+}
+
+
+.nav-phone-link:active{
+  background: #00BAFC;
+  opacity: 0.6;
+}
+.nav-phone-link{
+  border: 3px solid transparent;
+  text-decoration: none;
+  color: #fff;
+  background: #00BAFC;
+  border-radius: 5px;
+  padding:8px 16px;
+  
+}
+.nav-item:hover .dropdown-list{
+  display: block;
+}
+.nav-link:hover{
+  border-bottom: 3px #000000 solid ;
+  padding-bottom: 20px;
+}
+
+
+.dropdown-list{
+list-style: none;
+padding: 8px 16px;
+position: absolute;
+top: 200%;
+display: none;
+background-color: #fff;
+box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+left: 0;
+
+}
+.dropdown-item{
+
+  margin-bottom: 16px;
+  display: flex;
+   flex-wrap: wrap; 
+  
+}
+.dropdown-item:last-child{
+  margin-bottom: 0;
+}
+.dropdown-link{
+  font-size: 16px;
+  text-decoration: none;
+  color:#000000;
+  padding: 8px 16px;
+  
+}
+.dropdown-link:hover{
+  background-color: #00BAFC;
+  color: #fff;
+  
+}
+.site-text p{
+  margin-bottom: 16px;
+}
+.site-title{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 130%;
+}
+.site-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 97px;
+}
+.dropdown-link:active{
+  background-color: #00BAFC;
+  opacity: 0.6;
+}
+.site-text{
+  margin-top: 97px;
+  margin-right:170px ;
+}
+.section-link{
+  text-decoration: none;
+  color: #fff;
+  background: #00BAFC;
+  border-radius: 5px;
+  padding:8px 16px;
+
+  margin-top:16px;
+}
+.section-link:hover{
+  background: rgba(0, 186, 252, 0.8);
+border-radius: 5px;
+}
+.section-link:active{
+  background: rgba(0, 186, 252, 0.6);
+border-radius: 5px;
+}
+.youtube-video{
+  margin-top: 80px;
+  padding: 0;
+  
+  
+}
+.services-section{
+  text-align: center;
+  margin-top: 80px;
+}
+.services-text {
+ display: inline-block;
+  width: 719px;
+}
+.services-list{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+.services-item:hover{
+ background: #FFFFFF;
+box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+  
+}
+.services-item:active{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.services-item:nth-child(4){
+  margin-top: 48px; 
+}
+.services-item:last-child{
+  margin-top: 48px;
+}
+.services-item{
+  margin-right: 70px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+padding:24px 40px;
+}
+.services-button{
+  color: #fff;
+  background: #00BAFC;
+  border-radius: 5px;
+  padding:8px 16px;
+  border: 1px solid   #00BAFC;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+}
+.services-button:hover{
+  background: rgba(0, 186, 252, 0.8);
+border-radius: 5px;
+}
+.serfvices-button:active{
+  background: rgba(0, 186, 252, 0.6);
+  border-radius: 5px;
+}
+.services-link{
+  color:#00BAFC;
+ margin-left: 16px;
+}
+.site-section-title{
+  text-align: center;
+  margin-top: 120px;
+}
+.banner{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  margin-top: 30px;
+ 
+}
+
+.banner-text{
+ margin-left: 45px;
+ width:493px
+}
+.banner-text h3, p{
+  margin: 0;
+  
+}
+.banner-text_1{
+  margin-left: 45px;
+  width:493px
+}
+.banner-text_1 h3, p{
+  margin: 0;
+}
+.banner-text_2{
+  margin-left: 45px;
+  width:493px
+}
+.banner-text_2 h3, p{
+  margin: 0;
+}
+.banner-text_3{
+  margin-left: 45px;
+  width:493px
+}
+.banner-text_3 h3, p{
+  margin: 0;
+}
+.banner-text_4{
+  margin-left: 45px;
+  width:493px
+}
+.banner-text_4 h3, p{
+  margin: 0;
+}
+
+
+.banner-1{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  margin-top: 70px;
+  flex-direction: row-reverse;
+
+}
+.banner-2{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  margin-top: 131px;
+}
+.banner-3{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  margin-top: 108px;
+  flex-direction: row-reverse;
+}
+.banner-4{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  margin-top: 106px;
+}
+.link{
+margin-top: 59px;
+  text-align: center;
+}
+.section-link-1{
+  text-decoration: none;
+  color: #fff;
+  background: #00BAFC;
+  border-radius: 5px;
+  padding:8px 16px;
+}
+.button{
+  margin-top: 49px;
+  margin-bottom: 55px;
+}
+
+.form-section{
+  background-color: #00BAFC;
+  margin-top: 56px;
+}
+.form-title  h3{
+  margin: 0;
+  padding: 0;
+  
+
+}
+.form-list{
+  background-color:#ffffff ;
+  border-radius: 5px;
+  width: 348px;
+
+padding: 24px;
+margin-left: 128px;
+margin-top: 24px;
+}
+.form-title{
+  text-align: center;
+  padding: 56px 256px;
+ color:#fff;
+ display: block;
+
+}
+.form-menu{
+
+  display: block;
+}
+.input{
+  border: 0px;
+  background: #F3F3F3;
+border-radius: 5px;
+  width: 300px;
+  padding: 16px;
+  display: block;
+  margin-bottom: 16px;
+}
+.select-input{
+  border: 0px;
+  background: #F3F3F3;
+border-radius: 5px;
+  width: 300px;
+  padding: 16px;
+  display: block;
+}
+.btn:hover{
+  background-color: #00BAFC;
+  opacity: 0.8;
+}
+.btn:active{
+  background-color: #00BAFC;
+  opacity: 0.6;
+}
+.btn{
+  background-color: #00BAFC;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  width: 167px;
+  border: 0px;
+  font-size: 16px;
+  margin-top: 16px;
+ 
+}
+.site-footer{
+  background-color: #191919;
+}
+.footer-banner {
+  color: #fff;
+ display: flex;
+padding-bottom: 56px;
+padding-top: 56px;
+}
+.footer-text{
+  width: 320px;
+}
+.footer-menu{
+  margin-left: 100px;
+  margin-right: 87px;
+}
+.footer-list{
+  list-style: none;
+  padding: 0;
+
+margin-bottom: 0;
+}
+.footer-item{
+  margin-bottom: 8px;
+}
+.footer-link:hover{
+  color: #00BAFC;
+ 
+}
+.footer-link:active{
+  color: #00BAFC;
+opacity: 0.6;
+}
+.footer-item:last-child{
+  margin-bottom: 0;
+}
+.footer-link{
+  color: #fff;
+  text-decoration: none;
+}
+.telegram-icon{
+  position: relative;
+  margin-left: 27px;
+}
+.telegram-icon:before{
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../image/telegram_app_24px.png");
+  position: absolute;
+  top: 0%;
+  left: -29px;
+}
+.instagram-icon{
+  position: relative;
+  margin-left: 27px;
+}
+.instagram-icon:before{
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../image/instagram_24px.png");
+  position: absolute;
+  top: 0%;
+  left: -29px;
+}
+.facebook-icon{
+  position: relative;
+  margin-left: 27px;
+}
+.facebook-icon::before{
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../image/facebook_old_24px.png");
+  position: absolute;
+  top: 0%;
+  left: -29px;
+}
